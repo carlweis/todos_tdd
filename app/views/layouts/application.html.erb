@@ -9,7 +9,17 @@
   </head>
 
   <body>
-    <h1>Todos</h1>
-    <%= yield %>
+    <div class="site-header">
+      <h1>Todos</h1>
+      <% if signed_in? %>
+        <ul class="user-menu">
+          <li><%= link_to current_user.email, "#" %></li>
+        </ul>
+      <% end %>
+    </div>
+
+    <div class="page-container">
+      <%= yield %>
+    </div>
   </body>
 </html>
