@@ -16,10 +16,12 @@ gem 'turbolinks', '~> 5'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'meta_request'
 end
 
 group :test do
   gem 'capybara-webkit'
+  gem 'database_cleaner'
 end
 
 group :development do
