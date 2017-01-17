@@ -21,3 +21,8 @@
 .page-container {
   clear: both;
 }
+
+// todos
+.todos li.completed {
+  text-decoration: line-through;
+}
